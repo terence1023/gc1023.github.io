@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://gc1023.github.io/"/>
   <updated>2019-05-19T06:17:00.653Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://gc1023.github.io/</id>
   
   <author>
     <name>蔡晨冉</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>My Gallery</title>
-    <link href="http://yoursite.com/2019/05/19/ndefinedMy-Gallery/"/>
-    <id>http://yoursite.com/2019/05/19/ndefinedMy-Gallery/</id>
+    <link href="http://gc1023.github.io/2019/05/19/ndefinedMy-Gallery/"/>
+    <id>http://gc1023.github.io/2019/05/19/ndefinedMy-Gallery/</id>
     <published>2019-05-19T00:13:46.000Z</published>
     <updated>2019-05-19T06:17:00.653Z</updated>
     
@@ -38,9 +38,9 @@
   </entry>
   
   <entry>
-    <title>ccr</title>
-    <link href="http://yoursite.com/2019/05/19/ccr/"/>
-    <id>http://yoursite.com/2019/05/19/ccr/</id>
+    <title>Ccr</title>
+    <link href="http://gc1023.github.io/2019/05/19/ccr/"/>
+    <id>http://gc1023.github.io/2019/05/19/ccr/</id>
     <published>2019-05-19T00:08:12.000Z</published>
     <updated>2019-05-19T04:00:38.288Z</updated>
     
@@ -60,8 +60,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2019/05/18/hello-world/"/>
-    <id>http://yoursite.com/2019/05/18/hello-world/</id>
+    <link href="http://gc1023.github.io/2019/05/18/hello-world/"/>
+    <id>http://gc1023.github.io/2019/05/18/hello-world/</id>
     <published>2019-05-18T14:03:14.307Z</published>
     <updated>2019-05-18T14:03:14.309Z</updated>
     
