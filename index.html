@@ -283,6 +283,15 @@
       <time datetime="2019-05-21T20:23:20.000Z" itemprop="datePublished">2019-05-21</time>
 </a>
 
+ 
+    <a href="2019/05/22/ndefined东方国信杯/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+        
+            <span class="disqus-comment-count" data-disqus-identifier="2019/05/22/ndefined东方国信杯/"></span>
+        
+    </a>
 
     </div>
   
@@ -347,6 +356,15 @@
       <time datetime="2019-05-19T00:08:12.000Z" itemprop="datePublished">2019-05-19</time>
 </a>
 
+ 
+    <a href="2019/05/19/ccr/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+        
+            <span class="disqus-comment-count" data-disqus-identifier="2019/05/19/ccr/"></span>
+        
+    </a>
 
     </div>
   
@@ -407,6 +425,15 @@
       <time datetime="2019-05-18T14:03:14.307Z" itemprop="datePublished">2019-05-18</time>
 </a>
 
+ 
+    <a href="2019/05/18/hello-world/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+        
+            <span class="disqus-comment-count" data-disqus-identifier="2019/05/18/hello-world/"></span>
+        
+    </a>
 
     </div>
   
@@ -523,7 +550,48 @@
     </script>
 
 
+    
 
+    
+        <script id="dsq-count-scr" src="//.disqus.com/count.js" async></script>
+        <script>
+            if ($(".left-col").is(":visible")) {
+                var $disqusCount = $(".disqus-comment-count");
+                $disqusCount.bind("DOMNodeInserted", function(e) {
+                    var num = $(this).text().replace(/[^0-9]/ig,"");
+                    if (num > 0) {
+                        $(this).siblings(".count-comment").text(num);
+                    }
+                    $(this).remove();
+                })
+            } else {
+                $(".disqus-comment-count").remove();
+            }
+        </script>
+     
+
+
+
+
+    <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 
 <div class="scroll" id="scroll">
@@ -536,14 +604,14 @@
     
         var oOpenInNew = {
             
-            
-            
-            
-            
-            
+             title: "a.article-title, .article-more-link a", 
+             post: ".article-entry a[href], .copyright a[href]", 
+             tags: ".article-tag a", 
+             categories: ".article-category a, a.tag-list-link", 
+             articleNav: "#article-nav a, #post-nav-button a", 
              archives: ".archive-article-title", 
              miniArchives: "a.post-list-link", 
-            
+             menu: ".header-menu a", 
              friends: "#js-friends a", 
              socail: ".social a" 
         }
