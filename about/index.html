@@ -15,17 +15,17 @@
 
 
 
-<meta name="description" content="博客字数    阅读量    阅读时间">
+<meta name="description" content="博客字数    阅读量    阅读时间          专注于你">
 <meta property="og:type" content="website">
 <meta property="og:title" content="About">
 <meta property="og:url" content="http://gc1023.github.io/about/index.html">
 <meta property="og:site_name" content="GC1023">
-<meta property="og:description" content="博客字数    阅读量    阅读时间">
+<meta property="og:description" content="博客字数    阅读量    阅读时间          专注于你">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-20T14:11:35.076Z">
+<meta property="og:updated_time" content="2019-05-21T16:02:20.979Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="About">
-<meta name="twitter:description" content="博客字数    阅读量    阅读时间">
+<meta name="twitter:description" content="博客字数    阅读量    阅读时间          专注于你">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
@@ -73,7 +73,7 @@
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
         scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
-        search: 
+        search: true
     }
 </script>
 
@@ -105,6 +105,13 @@
 
         
 
+        
+            <form id="search-form">
+            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false">
+            <i class="fa fa-times" onclick="resetSearch()"></i>
+            </form>
+            <div id="local-search-result"></div>
+            <p class="no-result">No results found <i class="fa fa-spinner fa-pulse"></i></p>
         
 
 
@@ -316,7 +323,7 @@
 
 
           
-        <p>博客字数    阅读量    阅读时间</p>
+        <p>博客字数    阅读量    阅读时间<br>          专注于你</p>
 
       
     </div>
@@ -356,6 +363,28 @@
 
 
 
+
+
+    
+        <section id="comments">
+    <style> aside.comment-bar { margin: auto 30px; }</style>
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function(){
+            this.page.url = 'http://gc1023.github.io/about/index.html';
+            this.page.identifier = 'about/index.html';
+        };
+        var loadComment = function(){
+            var d = document, s = d.createElement('script');
+            s.src = '//.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        }
+    </script>
+    
+    <script> loadComment(); </script>
+
+</section>
 
 
     
