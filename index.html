@@ -188,7 +188,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="tags/on/">on</a></li></ul>
                     </div>
                 </section>
                 
@@ -266,6 +266,74 @@
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我">
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-ndefined东方国信杯" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="2019/05/22/ndefined东方国信杯/" class="article-date">
+      <time datetime="2019-05-21T20:23:20.000Z" itemprop="datePublished">2019-05-21</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="2019/05/22/ndefined东方国信杯/">东方国信杯</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>###东方国信杯<br>直接贴题：</p>
+<pre><code>1、针对马拉松数据（marathon-data.csv），进行数据分析，统计不同年龄性别的人马拉松成绩并用图表展示。
+ 题目：比较不同性别、年龄选手的成绩差异用图表展示，并提供你对数据的解读。
+</code></pre><p>   由于是小组作业，选择了一个自己稍微擅长的。这个一看就是画画图，随便写两句就行的题目。况且我还有Matlab，直接读取，画图。听起来分分钟搞定的事情，我居然做了3个小时。</p>
+<p>主要是Matlab不熟练，一些基本的语法代码都忘了。在这里重新记录一下：</p>
+<blockquote>
+<p>function excel(~)<br>fn = ‘工作簿2.xlsx.sheet5’;<br>h=xlsread(‘工作簿2.xlsx’,’sheet5’,’A2:A12586’);<br>a=xlsread(‘工作簿2.xlsx’,’sheet5’,’E2:F12586’);<br>b=xlsread(‘工作簿2.xlsx’,’sheet5’,’F2:F12586’);<br>c=xlsread(‘工作簿2.xlsx’,’sheet5’,’C2:C12586’);<br>Mh=xlsread(‘工作簿1.xlsx’,’sheet5’,’A2:A24666’);<br>Ma=xlsread(‘工作簿1.xlsx’,’sheet5’,’E2:E24666’);<br>Mb=xlsread(‘工作簿1.xlsx’,’sheet5’,’F2:F24666’);<br>A=ones(80,1);<br>B=ones(80,1);<br>m=17;<br>i=1;<br>suma=0;sumb=0;<br>num=0;<br>flag=0;<br>while(i&lt;24664)<br>    while(Mh(i) == m)<br>            suma=suma+Ma(i);<br>            sumb=sumb+Mb(i);<br>            num=num+1;<br>            i=i+1;<br>            flag=1;<br>    end<br>    if(flag==1)<br>        A(m)=suma./num;<br>        B(m)=sumb./num;<br>    end<br>    flag=0;<br>    suma=0;<br>    sumb=0;<br>    num=0;<br>    m=m+1;<br>end<br>plot(A)<br>hold on<br>plot(B)<br>ylabel(‘分钟’)<br>title(‘男性17-86岁各年龄平均时长’);<br>legend(‘split’,’final’);</p>
+</blockquote>
+<h2 id="Heading"><a href="#Heading" class="headerlink" title="Heading"></a>Heading</h2><p>####<strong>未完待续</strong></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="tags/on/">on</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="post-ccr" class="article article-type-post" itemscope itemprop="blogPost">
   
